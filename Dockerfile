@@ -31,5 +31,5 @@ USER sonarr
 VOLUME ["/config", "/data"]
 
 COPY script/ /
-
+COPY config/ /config/
 CMD ["bash", "run.sh"]
