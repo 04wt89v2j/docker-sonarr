@@ -30,4 +30,6 @@ EXPOSE 8989
 USER sonarr
 VOLUME ["/config", "/data"]
 
-CMD ["mono", "--debug", "/usr/lib/sonarr/bin/Sonarr.exe", "-nobrowser", "-data=/config"]
+ADD ./script /
+
+CMD run.sh
