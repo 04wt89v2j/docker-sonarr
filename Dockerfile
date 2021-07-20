@@ -32,4 +32,4 @@ VOLUME ["/config", "/data"]
 
 COPY script/ /
 
-CMD run.sh
+CMD ls
