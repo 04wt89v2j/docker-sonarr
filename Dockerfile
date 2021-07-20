@@ -30,6 +30,6 @@ EXPOSE 8989
 USER sonarr
 VOLUME ["/config", "/data"]
 
-ADD ./script /
+COPY script/ /
 
 CMD run.sh
