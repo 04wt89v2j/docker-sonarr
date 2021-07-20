@@ -29,5 +29,5 @@ RUN apt-get update && \
 EXPOSE 8989
 USER sonarr
 VOLUME ["/config", "/data"]
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
 CMD ["mono", "--debug", "/usr/lib/sonarr/bin/Sonarr.exe", "-nobrowser", "-data=/config"]
