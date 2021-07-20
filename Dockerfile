@@ -11,7 +11,7 @@ LABEL maintainer="aptalca"
 ARG DEBIAN_FRONTEND="noninteractive"
 ENV XDG_CONFIG_HOME="/config/xdg"
 ENV SONARR_BRANCH="main"
-
+RUN useradd -ms /bin/bash abc
 RUN \
   echo "**** install packages ****" && \
   apt-get update && \
